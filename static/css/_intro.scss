@@ -1,0 +1,29 @@
+.intro {
+    min-height: 370px;
+    padding: 100px 0 15px;
+    color: #fff;
+    background-image: url(../img/intro-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__title {
+        max-width: 350px;
+    }
+
+    &__desc {
+        padding: 15px 20px 0 0;
+        font: normal 400 16px/1.5 Montserrat;
+    }
+}
+
+@media (min-width:992px) {
+    .intro {
+        padding: 135px 0 685px;
+
+        &__desc {
+            max-width: 535px;
+            font-size: 20px;
+        }
+    }
+
+}

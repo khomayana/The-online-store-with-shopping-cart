@@ -1,0 +1,114 @@
+.shop {
+    margin: 35px 0 17px;
+    text-align: center;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 33px;
+        padding-bottom: 40px;
+    }
+
+    &__card {
+        max-width: 350px;
+
+        &--img {
+            position: relative;
+
+            img {
+                border-radius: 7px;
+            }
+        }
+
+        &--btn {
+            position: absolute;
+            top: 17px;
+            right: 17px;
+            padding: 25px 11px 4px 11px;
+            color: #fff;
+            font-size: 11px;
+            background-color: #CC5520;
+            border: none;
+
+            &::before,
+            &::after {
+                position: absolute;
+                top: 19%;
+                left: 48%;
+                width: 2px;
+                height: 12px;
+                background-color: #fff;
+                content: '';
+            }
+
+            &::before {
+                transform: rotate(90deg);
+            }
+
+            &:hover {
+                color: #CC5520;
+                background-color: #fff;
+
+                &::before,
+                &::after {
+                    background-color: #CC5520;
+                }
+            }
+        }
+
+        &--desc {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+        }
+
+        &--title {
+            font-weight: 700;
+        }
+
+        &--price {
+            font-weight: 600;
+        }
+
+        &--category {
+            color: #969595;
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        padding: 20px 0;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+        background-color: #CC5520;
+        border: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .shop {
+        margin: 25px 0 190px;
+
+        &__wrapper {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        &__btn {
+            max-width: 600px;
+        }
+    }
+}
+
+@media (min-width: 1100px) {
+    .shop {
+        &__card {
+            max-width: 420px;
+        }
+    }
+}

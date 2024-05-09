@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__wrapper">
+            <a class="header__logo" href="#"></a>
+            <nav>
+                <ul class="header__menu" data-mobile-menu>
+                    <li><a href="/items" data-link>Shop</a></li>
+                    <li><a href="/" data-link>Mainpage</a></li>
+                    <li><a href="/history" data-link>Our history</a></li>
+                    <li><a href="/items" data-link>All items</a></li>
+                </ul>
+                <button class="header__btn" data-menu-btn></button>
+            </nav>
+            <div class="header__icons" data-header-icons>
+                <button class="header__icons--item" data-cart-icon>
+                    <span class="header__icons--total-label" data-total-sum-label></span>
+                </button>
+                <a class="header__icons--item" href="/shop"></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="cart container" data-cart>
+            <button class="cart__btn-close" data-cart-btn-close></button>
+            <div class="cart__top">
+                <p>box</p>
+                <h2>Your Bag</h2>
+            </div>
+            <div class="cart__wrapper" data-cart-container>
+            </div>
+            <div class="cart__bottom">
+                <p class="cart__bottom--price">Total: <br><span> &#0036<span data-total-sum>0</span></span></p>
+                <a class="cart__bottom--btn" href="#">Checkout</a>
+            </div>
+        </section>
+        <div id="root"></div>
+    </main>
+    <footer class="footer">
+        <div class="container footer__top">
+            <div class="footer__desc">
+                <a class="footer__logo" href="#"><img src="/static/img/footer-logo.svg" alt=""></a>
+                <p class="footer__desc--text">Lorem ipsum dolor sit amet consectetur consectetur</p>
+                <a class="footer__desc--numb" href="tel:8956 3254 7887">Call us : 8956 3254 7887</a>
+                <div class="footer__social">
+                    <a href="#"><img src="/static/img/instagram.svg" alt="link to instagram"></a>
+                    <a href="#"><img src="/static/img/telegram.svg" alt="link to telegram"></a>
+                    <a href="#"><img src="/static/img/twitter.svg" alt="link to twitter"></a>
+                </div>
+            </div>
+            <div class="footer__menu">
+                <div class="footer__menu--list">
+                    <p>Shop</p>
+                    <ul>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                    </ul>
+                </div>
+                <div class="footer__menu--list">
+                    <p>Products</p>
+                    <ul>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                    </ul>
+                </div>
+                <div class="footer__menu--list">
+                    <p>Collection</p>
+                    <ul>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                    </ul>
+                </div>
+                <div class="footer__menu--list">
+                    <p>Weekly updates</p>
+                    <ul>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                    </ul>
+                </div>
+                <div class="footer__menu--list">
+                    <p>About us</p>
+                    <ul>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                        <li><a href="#">Lorem ipsum</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container footer__bottom">
+            <p>Storelogo, 2023 All rights reserved</p>
+        </div>
+    </footer>
+    <script type="module" src="/static/js/script.js"></script>
+    <script src="/static/js/mobileMenu.js"></script>
+    <script src="/static/js/cartOpenClose.js"></script>
+    <script src="/static/js/shoppingCart.js"></script>
+</body>
+
+</html>

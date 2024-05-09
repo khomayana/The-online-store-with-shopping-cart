@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1000,
+        "name": "Red smile fox",
+        "category": "Forest",
+        "photo": "fox1.jpg",
+        "price": 120.00
+    },
+    {
+        "id": 1001,
+        "name": "Pet smile fox",
+        "category": "Office",
+        "photo": "fox2.jpg",
+        "price": 80.00
+    },
+    {
+        "id": 1003,
+        "name": "Arctic  smile fox",
+        "category": "Foxkid",
+        "photo": "fox3.jpg",
+        "price": 40.00
+    },
+    {
+        "id": 1004,
+        "name": "Kit smile fox",
+        "category": "Foxkid",
+        "photo": "fox4.jpg",
+        "price": 120.00
+    },
+    {
+        "id": 1005,
+        "name": "Pet smile fox",
+        "category": "Forest",
+        "photo": "fox5.jpg",
+        "price": 100.00
+    },
+    {
+        "id": 1006,
+        "name": "Kit smile fox",
+        "category": "Foxkid",
+        "photo": "fox6.jpg",
+        "price": 135.00
+    },
+    {
+        "id": 1007,
+        "name": "Fennec smile fox",
+        "category": "Forest",
+        "photo": "fox7.jpg",
+        "price": 99.00
+    },
+    {
+        "id": 1008,
+        "name": "Red smile fox",
+        "category": "Forest",
+        "photo": "fox8.jpg",
+        "price": 75.00
+    }
+]

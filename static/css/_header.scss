@@ -1,0 +1,222 @@
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    padding: 7px 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(5px);
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        margin: 0 auto;
+        order: 1;
+        z-index: 100;
+        width: 123px;
+        height: 23px;
+        background-image: url(../img/header-logo-white.svg);
+    }
+
+    nav {
+        min-width: 44px;
+    }
+
+    &__menu {
+        display: none;
+
+        li:not(:last-child) {
+            margin-bottom: 18px;
+        }
+
+        a {
+            color: #fff;
+            font-size: 25px;
+            font-weight: 600;
+            line-height: 1.2;
+            text-transform: uppercase;
+
+            &:hover {
+                color: #CC5520;
+            }
+        }
+
+        &--open {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            padding: 100px 0;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.75);
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        width: 21px;
+        height: 5px;
+        padding: 0;
+        background-image: url(../img/header-dots.svg);
+        background-color: transparent;
+        border: none;
+        transition-property: opacity;
+        transition-duration: 300ms;
+        cursor: pointer;
+        opacity: 1;
+
+        &--open {
+            top: 300px;
+            left: 50%;
+            width: 18px;
+            height: 18px;
+            background-image: none;
+
+            &::before,
+            &::after {
+                position: absolute;
+                width: 3px;
+                height: 22px;
+                transform: translateX(-50%);
+                background-color: #fff;
+                content: '';
+            }
+
+            &::before {
+                transform: rotate(315deg);
+            }
+
+            &::after {
+                transform: rotate(45deg);
+            }
+
+            &:hover {
+
+                &::before,
+                &::after {
+                    background-color: #CC5520;
+                }
+            }
+        }
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &__icons {
+        display: flex;
+        gap: 20px;
+        order: 3;
+
+        &--item {
+            display: block;
+            width: 20px;
+            height: 20px;
+            padding: 0;
+            background-color: transparent;
+            background-repeat: no-repeat;
+            border: none;
+            transition-duration: 300ms;
+            transition-property: opacity;
+
+            &:first-child {
+                position: relative;
+                background-image: url(../img/shopping-cart-white.svg);
+            }
+
+            &:last-child {
+                background-image: url(../img/header-fox-icon-white.svg);
+            }
+        }
+
+        &--total-label {
+            position: absolute;
+            top: -5px;
+            left: -20px;
+            display: block;
+            width: auto;
+            color: #CC5520;
+            font-weight: 600;
+        }
+
+        &--hide {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    html:has(.goods) .header {
+        background-color: rgba(0, 0, 0, 0.45);
+
+        &__logo {
+            background-image: url(../img/header-logo-white.svg);
+        }
+
+        &__menu {
+            a {
+                color: #fff;
+            }
+        }
+
+        &__icons {
+            &--item {
+                &:first-child {
+                    background-image: url(../img/shopping-cart-white.svg);
+                }
+
+                &:last-child {
+                    background-image: url(../img/header-fox-icon-white.svg);
+                }
+            }
+        }
+    }
+
+    .header {
+        padding: 37px 0;
+        background-color: #fff;
+
+        &__logo {
+            margin: 0;
+            order: -1;
+            background-image: url(../img/header-logo-orange.svg);
+        }
+
+        &__menu {
+            position: static;
+            display: flex;
+            gap: 30px;
+
+            li:not(:last-child) {
+                margin-bottom: 0;
+            }
+
+            a {
+                font-size: 14px;
+                color: #000;
+            }
+        }
+
+        &__btn {
+            display: none;
+        }
+
+        &__icons {
+            &--item {
+                &:first-child {
+                    background-image: url(../img/shopping-cart-black.svg);
+                }
+
+                &:last-child {
+                    background-image: url(../img/header-fox-icon-black.svg);
+                }
+            }
+        }
+    }
+}
